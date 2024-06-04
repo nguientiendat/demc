@@ -17,7 +17,7 @@
             <option value="video/5508183445600.mp4">1080p</option>
         </select>
         <img id="imageDisplay" src="" alt="Selected Image" style="display: none;">
-        <video id="videoDisplay" width="640" height="360" control autoplay>
+        <video id="videoDisplay" width="640" height="360" control >
             <source id="videoSource" src="" type="video/mp4">
             Your browser does not support the video tag.
         </video>
@@ -30,11 +30,9 @@
                 var videoSource = document.getElementById('videoSource');
 
                 if (selectedOption.disabled) {
-                    // Nếu người dùng chọn tùy chọn mặc định, không làm gì cả
                     return;
                 }
 
-                // Kích hoạt tất cả các tùy chọn bên dưới tùy chọn đã chọn
                 var options = this.options;
                 var selectedIndex = this.selectedIndex;
                 for (var i = selectedIndex + 1; i < options.length; i++) {
