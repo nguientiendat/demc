@@ -19,7 +19,7 @@ body{
 #videoDisplay {
     width: 100%;
     height: auto;
-    max-width: 414px;
+/*     max-width: 414px;
     max-height: 736px;
-    object-fit: cover;
+    object-fit: cover; */
 }
